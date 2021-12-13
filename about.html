@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YuYoung's Portfolio</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/side-menu.css">
+    
     <script>
         $(document).ready(function(){
             $("#side").load("side-menu.html");
         });
+        function side_open() {
+          $("#mySidebar").css("display","block");
+        }
+        function side_close() {
+          $("#mySidebar").css("display","none");
+        }
     </script>
 </head>
 <body>
     <div id="side"></div>
+    <button class="menuBtn" onclick="side_open()"><i class="fas fa-bars"></i> Menu</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 about-title">
+                <p><i class="far fa-grin-wink"></i> ABOUT ME <i class="far fa-grin-wink"></i></p>
+            </div>
+            <div class="col-xs-12 about-content">
+                <div class="about-top">
+                    <div class="col-lg-4 col-sm-4 col-xs-12 about-image">
+                        <img src="assets/img/yuyoung.png" class="side-image" alt="">
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-xs-12 about-name">
+                    고유영
+                    GO YU YOUNG
+                    </div>
+                </div>
+                <div class="col-xs-12 about-mid">
+                    about-mid
+                </div>
+            </div>    
+        </div>
+    </div>
 </body>
 </html>

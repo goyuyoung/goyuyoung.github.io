@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>YuYoung's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/side-menu.css">
-</head>
-<body>
-   <div class="side-nav fixed">
-       <div class="side-top">
-           <img src="assets/img/yuyoung.png" class="side-image" alt="">
-           <h4 class="side-title">Go YuYoung</h4>
-       </div>
-       <hr class="side-line">
-       <div class="side-content">
-           <ul style="margin-top: 0px;">
-               <li><a href="index.html" class="about"><i class="fas fa-home"></i>HOME</a></li>
-               <li><a href="about.html" class="about"><i class="far fa-grin-wink"></i>ABOUT ME</a></li>
-               <li><a href="skill.html" class="skill"><i class="fas fa-laptop-code"></i>SKILL</a></li>
-               <li><a href="carrer.html" class="carrer"><i class="far fa-building"></i>CARRER</a></li>
-               <li><a href="project.html" class="project"><i class="fas fa-list"></i>PROJECT</a></li>
-           </ul>
-       </div>
-   </div>
-</body>
+<div class="side-menu" id="mySidebar" style="display: none;">
+  <button onclick="side_close()" class=""><i class="fas fa-times"></i></button>
+    <div class="side-top">
+       <img src="assets/img/yuyoung.png" class="side-image" alt="">
+       <h4 class="side-title">Go YuYoung</h4>
+    </div>
+    <hr class="side-line">
+    <div class="side-content">
+       <ul style="margin-top: 0px;">
+           <li><a href="index.html" class="about"><i class="fas fa-home"></i>HOME</a></li>
+           <li><a href="about.html" class="about"><i class="far fa-grin-wink"></i>ABOUT ME</a></li>
+           <li><a href="skill.html" class="skill"><i class="fas fa-laptop-code"></i>SKILL</a></li>
+           <li><a href="carrer.html" class="carrer"><i class="far fa-building"></i>CARRER</a></li>
+           <li><a href="project.html" class="project"><i class="fas fa-list"></i>PROJECT</a></li>
+       </ul>
+    </div>
+</div>
 </html>
