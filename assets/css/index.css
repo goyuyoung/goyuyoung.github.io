@@ -124,6 +124,15 @@ html {
 
 .hangle {
     font-family: 'Poor Story', cursive;
+}
+
+/*font-size*/
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-30 {
     font-size: 30px;
 }
 
@@ -181,4 +190,5 @@ html {
 
 .in-box i {
     font-size: 40px;
+    margin-right: 10px
 }
