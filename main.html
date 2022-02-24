@@ -3,84 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>YuYoung's Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-
-    <style>
-        .navbar {
-            position: fixed;
-            width: 100%;
-        }
-        .header img {
-            width: 50px;
-            margin: 5px 20px;
-        }
-        .nav-item {
-            padding: 0px 20px;
-        }
-        .navbar-collapse {
-            font-size: larger;
-            font-weight: bold;
-        }
-        .home {
-            padding: 250px 0;
-        }
-        .badge {
-            padding: 10px 25px;
-            font-size: medium;
-        }
-        .badge-div {
-            margin-bottom: 10px;
-        }
-        .home h2 {
-            margin-bottom: 10px;
-            font-size: 60px;
-            font-weight: 600;
-        }
-        .home h4 {
-            margin-bottom: 20px;
-            font-size: 26px;
-            line-height: 34px;
-        }
-        .home img {
-            width: 300px;
-            border-radius: 50%;
-            border: 10px solid #ffc007;
-            margin: 0 auto;
-            display: block;
-            margin: 5px auto;
-        }
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1140px;
-            }
-        }
-        @media (max-width: 770px) {
-            .home h2 {
-                font-size: 45px;
-            }
-            .home-info {
-                width: 270px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .home {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-            .home-info {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-
-    </style>
 
     <script>
         $(window).scroll(function(){
@@ -95,7 +23,7 @@
 
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg justify-content-center navbar-light">
             <div class="container-fluid">
                 <img src="assets/img/logo.png">
@@ -105,13 +33,13 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">about</a>
+                            <a class="nav-link" href="#about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">career</a>
+                            <a class="nav-link" href="#career">career</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">skill</a>
@@ -126,31 +54,104 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <div class="home">
-        <div class="container" >
-            <div class="row" id="home">
-                <div class="col-sm-6 col-xs-12 home-info">
-                    <div class="badge-div">
-                    <span class="badge bg-warning text-dark">
-                        <i class="bi bi-emoji-laughing"></i> Hello
-                    </span>
-
+    </header>
+    <div class="content">
+        <div class="home" id="home">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 home-info">
+                        <div class="badge-div">
+                            <span class="badge bg-warning text-dark">
+                                <i class="bi bi-emoji-laughing"></i> Hello
+                            </span>
+                        </div>
+                        <h2>Go YuYoung</h2>
+                        <h4>JAVA Developer</h4>
+                        <p><i class="bi bi-envelope-fill"></i> yooou5369@naver.com</p>
+                        <p><i class="bi bi-telephone-fill"></i> 010-1234-1234</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Incheon</p>
                     </div>
-                    <h2>Go YuYoung</h2>
-                    <h4>JAVA Developer</h4>
-                    <p><i class="bi bi-envelope-fill"></i> yooou5369@naver.com</p>
-                    <p><i class="bi bi-telephone-fill"></i> 010-1234-1234</p>
-                    <p><i class="bi bi-geo-alt-fill"></i> Incheon</p>
+                    <div class="col-sm-6 col-xs-12 home-img">
+                        <div class="img-div">
+                            <img src="assets/img/yuyoung.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                    <div class="img-div">
-                        <img src="assets/img/yuyoung.png">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <img src="assets/img/good.png">
+                    </div>
+                    <div class="col-sm-6 col-xs-12 about-info">
+                        <div class="badge-div">
+                            <span class="badge bg-warning text-dark">
+                                <i class="bi bi-emoji-smile"></i> About me
+                            </span>
+                        </div>
+                        <div class="about-hi">
+                            <p>안녕하세요.</p>
+                            <p>자바 웹개발자 고유영입니다. </p>
+                        </div>
+                        <div class="about-badge">
+                            <span class="badge outline-badge text-dark">JAVA</span>
+                            <span class="badge outline-badge text-dark">JavaScript</span>
+                            <span class="badge outline-badge text-dark">jQuery</span>
+                            <span class="badge outline-badge text-dark">html</span>
+                            <span class="badge outline-badge text-dark">css</span>
+                            <span class="badge outline-badge text-dark">JSP</span>
+                            <span class="badge outline-badge text-dark">Oracle DB</span>
+                            <span class="badge outline-badge text-dark">CUBRID</span>
+                            <span class="badge outline-badge text-dark">Mongo DB</span>
+                            <span class="badge outline-badge text-dark">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="career" id="career">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="career-img">
+                            <img src="assets/img/rmsoft_logo.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-xs-12 career-content">
+                        <div class="badge-div">
+                            <span class="badge bg-warning text-dark">
+                                <i class="bi bi-building"></i> Career
+                            </span>
+                        </div>
+                        <div class="career-info">
+                            <div class="career-rm">
+                                <h3>(주)알엠소프트</h3>
+                                <p>2020.08 ~ 2021.12 (1년 5개월)</p>
+                                기록관리 체계를 기반으로 시스템을 개발하여 공공기관에서 만들어지는 정보들을 기록하고 관리하는 시스템을 제공하는 기업입니다.
+                            </div>
+                            <div class="career-my">
+                                <ul>
+                                    <b>기록관리 시스템(반입,반출) 개발</b>
+                                    <p>2020.09 ~ 2020.10</p>
+                                    <li></li>
+                                    <b>업무관리 시스템(BMS) 개발</b>
+                                    <p>2021.04 ~ 2021.05</p>
+                                    <li></li>
+                                    <b>기록관리 시스템(도서관리) 개발</b>
+                                    <p>2021.05 ~ 2021.09</p>
+                                    <li></li>
+                                </ul>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 </body>
