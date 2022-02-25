@@ -14,7 +14,7 @@
     font-size: larger;
     font-weight: bold;
 }
-.home, .about, .career {
+.contact, .about, .career, .skill, .project {
     padding: 200px 0;
 }
 .badge {
@@ -24,17 +24,17 @@
 .badge-div {
     margin-bottom: 10px;
 }
-.home h2 {
+.contact h2 {
     margin-bottom: 10px;
     font-size: 60px;
     font-weight: 600;
 }
-.home h4 {
+.contact h4 {
     margin-bottom: 20px;
     font-size: 26px;
     line-height: 34px;
 }
-.home img {
+.contact img {
     width: 350px;
     border-radius: 50%;
     border: 10px solid #ffc007;
@@ -48,20 +48,20 @@
     }
 }
 @media (max-width: 770px) {
-    .home h2 {
+    .contact h2 {
         font-size: 45px;
     }
-    .home-info {
+    .contact-info {
         width: 270px;
     }
 }
 
 @media (max-width: 575px) {
-    #home .row {
+    #contact .row {
         display: flex;
         flex-direction: column-reverse;
     }
-    .home-info {
+    .contact-info {
         width: 100%;
         text-align: center;
     }
@@ -73,7 +73,7 @@
     padding-left: 50px;
 }
 .outline-badge {
-    border: 1px solid #ffc107;
+    border: 1px solid #ffc007;
     background-color: transparent;
     padding: 5px 15px;
     font-size: small;
@@ -88,7 +88,7 @@
     margin-top: 30px;
 }
 .career-img img {
-    width: 250px;
+    width: 80%;
     border-radius: 50%;
     border: 2px solid #ccc;
     margin: 0 auto;
@@ -103,6 +103,7 @@
 }
 .career-rm {
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 .period {
     font-weight: 200;
@@ -110,4 +111,52 @@
 .career-my h6 {
     margin-top: 40px;
     font-weight: bold;
+}
+.box-hover:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.project-inner {
+    border: 3px solid #ffc007;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+}
+.project-content img {
+    width: 100%;
+}
+.project-inner h6 {
+    margin-top: 20px;
+}
+.project-inner h2 {
+    margin: 20px 0;
+}
+.project-img2 {
+    margin: auto 0;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.skill-inner {
+    border: 3px solid #ffc007;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 330px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+.skill-inner h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: center;
 }
