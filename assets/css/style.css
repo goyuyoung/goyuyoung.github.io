@@ -104,6 +104,10 @@
 .career-rm {
     margin-bottom: 30px;
 }
-.career-my p {
+.period {
     font-weight: 200;
+}
+.career-my h6 {
+    margin-top: 40px;
+    font-weight: bold;
 }
