@@ -147,16 +147,25 @@ a:hover {
     color: black;
     text-decoration: underline;
 }
-.skill-inner {
-    border: 3px solid #ffc007;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 330px;
-    margin-right: 25px;
-    margin-bottom: 30px;
+.skill-content {
+    overflow: hidden;
 }
-.skill-inner h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+.skill-left {
+    float: left;
+    width: 20%;
+}
+.skill-left p {
+    height: 70px;
+    line-height: 70px;
     text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.skill-right {
+    float: right;
+    width: 80%;
+    padding-left: 50px;
+}
+.skill-right img {
+    height: 70px;
 }
